@@ -7,6 +7,9 @@ body, html {
   margin: 0;
   font-family: "Lato", sans-serif; }
 
+@media screen and (max-width: 700px) {
+  .flex {
+    flex-direction: column; } }
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -52,14 +55,14 @@ body, html {
     padding: 0;
     position: absolute;
     text-align: center; }
-    .nav #menu li, .nav #menu .navDivider {
+    .nav #menu li, .nav #menu .navDivider, .nav #menu .pieSlideHeader .pieDivider, .pieSlideHeader .nav #menu .pieDivider {
       display: inline;
       position: relative;
       top: 37%;
       font-weight: 900; }
     .nav #menu .navDivider {
       font-family: "windings";
-      color: #fff;
+      color: #EFD38E;
       margin: 0 10px; }
     .nav #menu a {
       text-decoration: none;
@@ -73,8 +76,27 @@ body, html {
   background-position: center;
   background-size: cover; }
 
-@media screen and (max-width: 700px) {
-  .flex {
-    flex-direction: column; } }
+.pieSlideHeader {
+  position: relative;
+  text-align: center;
+  padding: 30px 0; }
+  .pieSlideHeader h1 {
+    font-size: 40px;
+    margin: auto;
+    color: #F06B24;
+    font-weight: 100; }
+  .pieSlideHeader .pieDivider {
+    font-family: "windings";
+    font-size: 30px;
+    color: #EFD38E;
+    margin: 0 10px; }
+  .pieSlideHeader .pieHeaderLine {
+    position: absolute;
+    border-top: 2px solid #EFD38E;
+    max-width: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 46px; }
 
 /*# sourceMappingURL=main.css.map */
