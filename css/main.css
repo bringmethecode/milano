@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "windings";
+  src: url("../fonts/windings.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 body, html {
   margin: 0;
   font-family: "Lato", sans-serif; }
@@ -53,6 +58,7 @@ body, html {
       top: 37%;
       font-weight: 900; }
     .nav #menu .navDivider {
+      font-family: "windings";
       color: #fff;
       margin: 0 10px; }
     .nav #menu a {
