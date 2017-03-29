@@ -1,23 +1,42 @@
-.pieSlideHeader
-	position: relative
-	text-align: center
-	padding: 30px 0
-	h1
-		font-size: 40px
-		margin: auto
-		color: $orangeAccent
-		font-weight: 100
-	.pieDivider
-		font-family: $windings
-		font-size: 30px
-		@extend li
-		color: $goldAccent
-		margin: 0 10px
-	.pieHeaderLine
-		position: absolute
-		border-top: 2px solid $goldAccent
-		max-width: 200px
-		left: 0
-		right: 0
-		margin: auto
-		bottom: 46px
+.pieSlide
+	.pieSlideHeader
+		position: relative
+		text-align: center
+		padding: 30px 0
+		h1
+			font-size: 40px
+			margin: auto
+			color: $orangeAccent
+			font-weight: 100
+		.pieDivider
+			font-family: $windings
+			font-size: 30px
+			@extend li
+			color: $goldAccent
+			margin: 0 10px
+		.pieHeaderLine
+			position: absolute
+			border-top: 2px solid $goldAccent
+			max-width: 200px
+			left: 0
+			right: 0
+			margin: auto
+			bottom: 46px
+	.slider
+		max-height: 400px
+		background-color: #F4ECC9
+		.pie
+			height: 200px
+			width: 250px !important
+		#pie1
+			background-color: blue
+		#pie2
+			background-color: yellow
+		#pie3
+			background-color: orange
+		#pie4
+			background-color: green
+		#pie5
+			background-color: grey
+		#pie6
+			background-color: black

@@ -55,7 +55,7 @@ body, html {
     padding: 0;
     position: absolute;
     text-align: center; }
-    .nav #menu li, .nav #menu .navDivider, .nav #menu .pieSlideHeader .pieDivider, .pieSlideHeader .nav #menu .pieDivider {
+    .nav #menu li, .nav #menu .navDivider, .nav #menu .pieSlide .pieSlideHeader .pieDivider, .pieSlide .pieSlideHeader .nav #menu .pieDivider {
       display: inline;
       position: relative;
       top: 37%;
@@ -76,21 +76,21 @@ body, html {
   background-position: center;
   background-size: cover; }
 
-.pieSlideHeader {
+.pieSlide .pieSlideHeader {
   position: relative;
   text-align: center;
   padding: 30px 0; }
-  .pieSlideHeader h1 {
+  .pieSlide .pieSlideHeader h1 {
     font-size: 40px;
     margin: auto;
     color: #F06B24;
     font-weight: 100; }
-  .pieSlideHeader .pieDivider {
+  .pieSlide .pieSlideHeader .pieDivider {
     font-family: "windings";
     font-size: 30px;
     color: #EFD38E;
     margin: 0 10px; }
-  .pieSlideHeader .pieHeaderLine {
+  .pieSlide .pieSlideHeader .pieHeaderLine {
     position: absolute;
     border-top: 2px solid #EFD38E;
     max-width: 200px;
@@ -98,5 +98,23 @@ body, html {
     right: 0;
     margin: auto;
     bottom: 46px; }
+.pieSlide .slider {
+  max-height: 400px;
+  background-color: #F4ECC9; }
+  .pieSlide .slider .pie {
+    height: 200px;
+    width: 250px !important; }
+  .pieSlide .slider #pie1 {
+    background-color: blue; }
+  .pieSlide .slider #pie2 {
+    background-color: yellow; }
+  .pieSlide .slider #pie3 {
+    background-color: orange; }
+  .pieSlide .slider #pie4 {
+    background-color: green; }
+  .pieSlide .slider #pie5 {
+    background-color: grey; }
+  .pieSlide .slider #pie6 {
+    background-color: black; }
 
 /*# sourceMappingURL=main.css.map */
