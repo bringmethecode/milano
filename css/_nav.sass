@@ -23,6 +23,12 @@
 		color: #fff
 		text-transform: uppercase
 		font-size: 18px
+		transition: color .3s ease-out
+		&:hover
+			color: $goldAccent
+			transition: color .3s ease-in
+	.active
+		color: $goldAccent
 	.navDivider
 		font-family: $windings
 		@extend li
