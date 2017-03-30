@@ -12,7 +12,15 @@ body, html {
     flex-direction: column; }
 
   #franquies {
-    padding-left: 0 !important; } }
+    padding-left: 0 !important; }
+
+  .flex .col {
+    text-align: center !important; }
+  .flex .user {
+    padding-right: 0 !important; }
+
+  .login {
+    padding: 15px 0; } }
 @media screen and (max-width: 620px) and (min-width: 340px) {
   #menu {
     top: -17px !important; } }
@@ -25,6 +33,9 @@ body, html {
     top: -18px !important; }
     #menu a {
       font-size: 14px !important; } }
+@media screen and (max-width: 432px) {
+  .itemimg {
+    max-width: 310px; } }
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -222,9 +233,12 @@ body, html {
     width: 300px;
     height: 250px;
     text-align: center; }
-  .productosFlex .prodimg {
-    width: 280px;
-    height: auto; }
+  .productosFlex a {
+    text-decoration: none; }
+
+.prodimg {
+  width: 280px;
+  height: auto; }
 
 .title {
   color: #663300;
@@ -245,5 +259,34 @@ body, html {
   font-weight: 100;
   font-size: 18px;
   margin: 0; }
+
+.item {
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .item .itemflex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px; }
+    .item .itemflex .col {
+      flex: 2;
+      width: 300px;
+      height: 250px;
+      padding: 20px; }
+    .item .itemflex .imgcol {
+      flex: 1;
+      text-align: center; }
+  .item p, .item .domicilio h1, .domicilio .item h1 {
+    color: #91561b;
+    padding: 20px 0; }
+
+.complementflex {
+  display: flex;
+  flex-wrap: wrap; }
+  .complementflex .col {
+    flex: 1;
+    width: 300px;
+    height: 250px;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
