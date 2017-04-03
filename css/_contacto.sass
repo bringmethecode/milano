@@ -1,7 +1,19 @@
+#contactotitle
+	margin-top: 50px
+	margin-left: 60px
+	margin-bottom: 20px
+	font-size: 30px
+
+#formtitle
+	text-transform: none
+	font-size: 30px
+
 .contactoflex
 	display: flex
 	flex-wrap: wrap
 	background-color: $mistAccent
+	justify-content: center
+	padding: 60px
 	input, textarea
 		border: none
 		padding: 8px
@@ -10,6 +22,7 @@
 		margin-bottom: 5px
 	.col
 		flex: 1
+		align-self: center
 		h1
 			margin: 0
 			color: $maincolor
@@ -35,11 +48,22 @@
 				display: block
 			p
 				display: inline-block
-	
 
 .formflex
-	@extend .contactoflex
+	display: flex
+	flex-wrap: wrap
+	padding-top: 10px
 	p
-	margin: 0
-	color: $secondcolor
-	font-size: 14px
+		margin: 0
+		color: $secondcolor
+		font-size: 14px
+
+#submit
+	background-color: $secondcolor
+	border: none
+	padding: 5px 25px
+	font-size: 22px
+	color: #fff
+	border-radius: 30px
+	font-family: inherit
+	text-transform: uppercase

@@ -20,7 +20,13 @@ body, html {
     padding-right: 0 !important; }
 
   .login {
-    padding: 15px 0; } }
+    padding: 15px 0; }
+
+  #numberp {
+    display: block; }
+
+  #commentp {
+    max-width: 400px; } }
 @media screen and (max-width: 620px) and (min-width: 340px) {
   #menu {
     top: -17px !important; } }
@@ -38,7 +44,10 @@ body, html {
     max-width: 310px; }
 
   #gmap {
-    width: 200px !important; } }
+    width: 200px !important; }
+
+  #commentp {
+    max-width: 250px; } }
 @media screen and (max-width: 820px) and (min-width: 620px) {
   #gmap {
     width: 600px !important; } }
@@ -148,18 +157,12 @@ body, html {
   .pieSlide .slider .pie {
     height: 200px;
     width: 250px !important; }
-  .pieSlide .slider #pie1 {
-    background-color: blue; }
-  .pieSlide .slider #pie2 {
-    background-color: yellow; }
-  .pieSlide .slider #pie3 {
-    background-color: orange; }
-  .pieSlide .slider #pie4 {
-    background-color: green; }
-  .pieSlide .slider #pie5 {
-    background-color: grey; }
-  .pieSlide .slider #pie6 {
-    background-color: black; }
+    .pieSlide .slider .pie img {
+      width: 100%; }
+
+.fa-arrow-circle-o-right, .fa-arrow-circle-o-left {
+  font-family: FontAwesome;
+  font-style: normal; }
 
 .bottom .divider {
   height: 100px;
@@ -394,47 +397,74 @@ body, html {
       margin: 0;
       color: #91561b; }
 
-.contactoflex, .formflex {
+#contactotitle {
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  font-size: 30px; }
+
+#formtitle {
+  text-transform: none;
+  font-size: 30px; }
+
+.contactoflex {
   display: flex;
   flex-wrap: wrap;
-  background-color: #F4ECC9; }
-  .contactoflex input, .formflex input, .contactoflex textarea, .formflex textarea {
+  background-color: #F4ECC9;
+  justify-content: center;
+  padding: 60px; }
+  .contactoflex input, .contactoflex textarea {
     border: none;
     padding: 8px;
     margin-top: 5px;
     margin-right: 5px;
     margin-bottom: 5px; }
-  .contactoflex .col, .formflex .col {
-    flex: 1; }
-    .contactoflex .col h1, .formflex .col h1 {
+  .contactoflex .col {
+    flex: 1;
+    align-self: center; }
+    .contactoflex .col h1 {
       margin: 0;
       color: #663300;
       text-transform: uppercase;
       font-size: 20px;
       font-weight: 900; }
-    .contactoflex .col p, .formflex .col p, .contactoflex .col .domicilio h1, .domicilio .contactoflex .col h1, .formflex .col .domicilio h1, .domicilio .formflex .col h1 {
+    .contactoflex .col p, .contactoflex .col .domicilio h1, .domicilio .contactoflex .col h1 {
       margin: 0;
       color: #91561b;
       font-size: 14px; }
-  .contactoflex .form, .formflex .form {
+  .contactoflex .form {
     flex: 2; }
-    .contactoflex .form ul, .formflex .form ul {
+    .contactoflex .form ul {
       margin: 0;
       padding: 0;
       list-style: none; }
-    .contactoflex .form li, .formflex .form li, .contactoflex .form #menu .navDivider, #menu .contactoflex .form .navDivider, .formflex .form #menu .navDivider, #menu .formflex .form .navDivider, .contactoflex .form .pieSlide .pieSlideHeader .pieDivider, .pieSlide .pieSlideHeader .contactoflex .form .pieDivider, .formflex .form .pieSlide .pieSlideHeader .pieDivider, .pieSlide .pieSlideHeader .formflex .form .pieDivider {
+    .contactoflex .form li, .contactoflex .form #menu .navDivider, #menu .contactoflex .form .navDivider, .contactoflex .form .pieSlide .pieSlideHeader .pieDivider, .pieSlide .pieSlideHeader .contactoflex .form .pieDivider {
       margin: 0 0 0.25em 0;
       clear: both;
       display: inline-block;
       width: 100%; }
-      .contactoflex .form li label, .formflex .form li label, .contactoflex .form #menu .navDivider label, #menu .contactoflex .form .navDivider label, .formflex .form #menu .navDivider label, #menu .formflex .form .navDivider label, .contactoflex .form .pieSlide .pieSlideHeader .pieDivider label, .pieSlide .pieSlideHeader .contactoflex .form .pieDivider label, .formflex .form .pieSlide .pieSlideHeader .pieDivider label, .pieSlide .pieSlideHeader .formflex .form .pieDivider label {
+      .contactoflex .form li label, .contactoflex .form #menu .navDivider label, #menu .contactoflex .form .navDivider label, .contactoflex .form .pieSlide .pieSlideHeader .pieDivider label, .pieSlide .pieSlideHeader .contactoflex .form .pieDivider label {
         display: block; }
-      .contactoflex .form li p, .formflex .form li p, .contactoflex .form #menu .navDivider p, #menu .contactoflex .form .navDivider p, .formflex .form #menu .navDivider p, #menu .formflex .form .navDivider p, .contactoflex .form .pieSlide .pieSlideHeader .pieDivider p, .pieSlide .pieSlideHeader .contactoflex .form .pieDivider p, .formflex .form .pieSlide .pieSlideHeader .pieDivider p, .pieSlide .pieSlideHeader .formflex .form .pieDivider p, .contactoflex .form li .domicilio h1, .domicilio .contactoflex .form li h1, .formflex .form li .domicilio h1, .domicilio .formflex .form li h1, .contactoflex .form #menu .navDivider .domicilio h1, .domicilio .contactoflex .form #menu .navDivider h1, #menu .contactoflex .form .navDivider .domicilio h1, .domicilio #menu .contactoflex .form .navDivider h1, .formflex .form #menu .navDivider .domicilio h1, .domicilio .formflex .form #menu .navDivider h1, #menu .formflex .form .navDivider .domicilio h1, .domicilio #menu .formflex .form .navDivider h1, .contactoflex .form .pieSlide .pieSlideHeader .pieDivider .domicilio h1, .domicilio .contactoflex .form .pieSlide .pieSlideHeader .pieDivider h1, .pieSlide .pieSlideHeader .contactoflex .form .pieDivider .domicilio h1, .domicilio .pieSlide .pieSlideHeader .contactoflex .form .pieDivider h1, .formflex .form .pieSlide .pieSlideHeader .pieDivider .domicilio h1, .domicilio .formflex .form .pieSlide .pieSlideHeader .pieDivider h1, .pieSlide .pieSlideHeader .formflex .form .pieDivider .domicilio h1, .domicilio .pieSlide .pieSlideHeader .formflex .form .pieDivider h1 {
+      .contactoflex .form li p, .contactoflex .form #menu .navDivider p, #menu .contactoflex .form .navDivider p, .contactoflex .form .pieSlide .pieSlideHeader .pieDivider p, .pieSlide .pieSlideHeader .contactoflex .form .pieDivider p, .contactoflex .form li .domicilio h1, .domicilio .contactoflex .form li h1, .contactoflex .form #menu .navDivider .domicilio h1, .domicilio .contactoflex .form #menu .navDivider h1, #menu .contactoflex .form .navDivider .domicilio h1, .domicilio #menu .contactoflex .form .navDivider h1, .contactoflex .form .pieSlide .pieSlideHeader .pieDivider .domicilio h1, .domicilio .contactoflex .form .pieSlide .pieSlideHeader .pieDivider h1, .pieSlide .pieSlideHeader .contactoflex .form .pieDivider .domicilio h1, .domicilio .pieSlide .pieSlideHeader .contactoflex .form .pieDivider h1 {
         display: inline-block; }
 
 .formflex {
-  margin: 0;
-  color: #91561b;
-  font-size: 14px; }
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px; }
+  .formflex p, .formflex .domicilio h1, .domicilio .formflex h1 {
+    margin: 0;
+    color: #91561b;
+    font-size: 14px; }
+
+#submit {
+  background-color: #91561b;
+  border: none;
+  padding: 5px 25px;
+  font-size: 22px;
+  color: #fff;
+  border-radius: 30px;
+  font-family: inherit;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */
